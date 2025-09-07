@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Arch Linux setup script
-# Installs yay, customizable packages, and moves dotfiles from script directory to correct locations
+# Installs yay, customizable packages (including ly display manager), moves dotfiles from script directory to correct locations, and enables/starts ly
 
 # Exit on error
 set -e
@@ -50,11 +50,27 @@ PKGS=(
     "yazi"
     "ttf-iosevka-nerd"
     "librewolf"
+    "ly"
 )
 
 # Install packages
 echo -e "${GREEN}Installing packages...${NC}"
 yay -S --needed --noconfirm "${PKGS[@]}"
+
+# Enable and start ly display manager
+echo -e "${GREEN}Enabling and starting ly display manager...${NC}"
+if ! systemctl is-enabled ly.service &> /dev/null; then
+    sudo systemctl enable ly.service
+    echo -e "${GREEN}ly display manager enabled${NC}"
+else
+    echo -e "${GREEN}ly is already enabled${NC}"
+fi
+if ! systemctl is-active ly.service &> /dev/null; then
+    sudo systemctl start ly.service
+    echo -e "${GREEN}ly display manager started${NC}"
+else
+    echo -e "${GREEN}ly is already running${NC}"
+fi
 
 # Dotfiles setup
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -76,10 +92,10 @@ for file in "${DOTFILES[@]}"; do
         mkdir -p "$(dirname "$target")"
         if [ -f "$target" ] || [ -d "$target" ] || [ -L "$target" ]; then
             echo -e "${GREEN}Backing up existing $target${NC}"
-            mv "$target" "${target}.bak"
+            cp -r "$target" "${target}.bak"
         fi
         echo -e "${GREEN}Moving $source to $target${NC}"
-        mv "$source" "$target"
+        cp -r "$source" "$target"
     else
         echo -e "${RED}Warning: $source not found, skipping${NC}"
     fi
@@ -97,5 +113,10 @@ if [ "$SHELL" != "$(which zsh)" ]; then
     chsh -s "$(which zsh)"
 fi
 
+echo -e "Cloning oh-my-zsh plugins"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zdharma-continuum/fast-syntax-highliting.git $ZSH_CUSTOM/plugins/fast-syntax-highlighting
+
 echo -e "${GREEN}Setup complete! Dotfiles have been moved to their correct locations${NC}"
-echo -e "${GREEN}You may need to log out and back in for shell changes to take effect${NC}"
+echo -e "${GREEN}ly display manager is enabled and started. You may need to reboot for all changes to take effect${NC}"
