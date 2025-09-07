@@ -42,26 +42,3 @@ PKGS=(
 
 echo -e "Installing packages..."
 yay -S --needed --noconfirm "${PKGS[@]}"
-
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-echo -e "Setting up dotfiles..."
-
-cp ./.zshrc ~
-cp ./.tmux.conf ~
-cp ./sway/ ~/.config
-cp ./rofi/ ~/.config
-cp  ./i3blocks/ ~/.config
-
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
-	echo -e "Installing Oh My Zsh"
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ""
-	--unattended
-fi
-
-if [ "$SHELL" != "$(which zsh)" ]; then
-	echo -e "Setting zsh as default shell..."
-	chsh -s "$(which zsh)"
-fi
-
-echo -e "Setup complete. Please reboot your system."
