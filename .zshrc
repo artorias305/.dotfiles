@@ -10,6 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
 
+PROMPT='λ '
+
 alias vim='nvim'
 alias vi='nvim'
 alias src='source ~/.zshrc'
