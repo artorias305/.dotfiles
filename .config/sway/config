@@ -61,7 +61,7 @@ exec swayidle -w \
     bindsym $mod+Shift+Return exec prime-run $term
     bindsym $mod+Shift+b exec $browser
 
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
     bindsym $mod+Shift+z exec slurp | grim -g - - | wl-copy
 
 
