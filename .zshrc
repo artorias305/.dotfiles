@@ -9,6 +9,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlightin
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
+export BROWSER='brave'
 
 PROMPT='λ '
 

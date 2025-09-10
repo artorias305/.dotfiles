@@ -88,6 +88,10 @@ input * {
     repeat_rate 50         
 }
 
+input type:keyboard {
+	xkb_layout "us"
+	# xkb_variant "intl"
+}
 
 #
 # Moving around:
@@ -156,7 +160,7 @@ input * {
 
     bindsym $mod+f fullscreen
     bindsym $mod+Shift+space floating toggle
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
