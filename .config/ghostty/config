@@ -1,0 +1,11 @@
+theme = black_metal_gorgoroth  
+
+font-family = Iosevka Nerd Font
+font-size = 14
+
+shell-integration-features = no-cursor
+
+background-opacity = 1.0
+window-padding-balance = true
+
+cursor-style = block
