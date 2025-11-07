@@ -2,6 +2,8 @@ if [[ -d /opt/homebrew/bin ]]; then
   PATH="/opt/homebrew/bin:${PATH}"
 fi
 
+PROMPT='[%n:%m %~]$ '
+
 export PATH="/Users/kiq/8086-TASM-RUN:$PATH"
 export PATH="/Users/kiq/.config/emacs/bin:$PATH"
 
@@ -13,6 +15,7 @@ export LIBRARY_PATH="$(brew --prefix)/lib:$LIBRARY_PATH"
 export DYLD_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="$(brew --prefix)/lib/pkgconfig:$PKG_CONFIG_PATH"
 export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH}:/opt/homebrew/opt/glfw/include"
+export CPLUS_INCLUDE_PATH="${PLUS_INCLUDE_PATH}:/opt/homebrew/opt/raylib/include"
 export LIBRARY_PATH="${LIBRARY_PATH}:/opt/homebrew/opt/glfw/lib"
 export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET" 
 
