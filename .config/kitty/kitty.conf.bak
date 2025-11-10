@@ -1,5 +1,7 @@
-font_family JetBrainsMono Nerd Font
+include gruber-darker.conf
+font_family Iosevka Nerd Font Mono
 disable_ligatures always
 cursor_shape block
 shell_integration no-cursor
+font_size 16
 macos_option_as_alt yes
