@@ -28,6 +28,7 @@ alias vim="nvim"
 alias src="source ~/.zshrc"
 alias ls="ls -F --color=auto"
 alias ll="eza -l -g --icons"
+alias lg="lazygit"
 
 export EDITOR="bob run nightly"
 export MANPAGER="bob run nightly +Man!"
