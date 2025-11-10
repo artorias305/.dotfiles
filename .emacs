@@ -4,7 +4,15 @@
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (package-initialize)
 
+(setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
+
+(defun my-c-mode-hook ()
+  (setq c-basic-offset 4)
+  (setq indent-tabs-mode t))
+
+(add-hook 'c-mode-hook 'my-c-mode-hook)
+(add-hook 'c++-mode-hook 'my-c-mode-hook)
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -88,6 +96,14 @@
 (use-package vterm
   :ensure t)
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(package-selected-packages nil))
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
