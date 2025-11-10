@@ -14,6 +14,4 @@ vim.opt.termguicolors = true
 vim.opt.undofile = true
 vim.cmd([[set mouse=a]])
 
-vim.cmd.colorscheme("gruber-darker")
-
 vim.lsp.enable("clangd")
