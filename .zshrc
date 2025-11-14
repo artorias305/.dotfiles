@@ -23,7 +23,6 @@ export PATH="/Users/kiq/.config/emacs/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 
 alias cmake="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
-alias nvim="bob run nightly"
 alias vim="nvim"
 alias src="source ~/.zshrc"
 alias ls="ls -F --color=auto"

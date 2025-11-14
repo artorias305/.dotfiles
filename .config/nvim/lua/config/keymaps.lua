@@ -11,3 +11,5 @@ map("n", "<leader>e", ":Oil<CR>")
 map("n", "<leader>tp", ":TypstPreview<CR>")
 
 map({ "n", "v", "x" }, "<leader>y", '"+y')
+
+map({ "n", "v" }, "<C-c>", ":noh<CR>")
