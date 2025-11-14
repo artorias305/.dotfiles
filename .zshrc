@@ -29,8 +29,8 @@ alias ls="ls -F --color=auto"
 alias ll="eza -l -g --icons"
 alias lg="lazygit"
 
-export EDITOR="bob run nightly"
-export MANPAGER="bob run nightly +Man!"
+export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
 
 export HISTIGNORE='exit:cd:ls:bg:fg:history:f:fd:vim'
 
