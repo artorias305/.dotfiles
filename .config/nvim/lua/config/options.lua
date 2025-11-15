@@ -16,6 +16,6 @@ vim.cmd([[set mouse=a]])
 
 vim.lsp.enable("clangd")
 
-vim.cmd.colorscheme("oldworld")
+vim.cmd.colorscheme("low")
 
 vim.opt.showtabline = 0
