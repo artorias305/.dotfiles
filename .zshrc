@@ -59,4 +59,5 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
