@@ -19,5 +19,6 @@
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
   "typst-preview.nvim": { "branch": "master", "commit": "64469f832c4d214683c12e0fceba98055cb1ce3b" },
   "uv.nvim": { "branch": "main", "commit": "b565e03a573ee2f6493d0516b7854b9142855a6a" },
+  "vague.nvim": { "branch": "main", "commit": "dba28050887c2810b5ebf9e0143b4e919bd55757" },
   "vscode": { "branch": "main", "commit": "cb9df0873c10a21d05362455ae3bb355eadcef6b" }
 }

@@ -12,11 +12,12 @@ vim.opt.cursorcolumn = false
 vim.opt.smartindent = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
+vim.cmd([[set noswapfile]])
 vim.cmd([[set mouse=a]])
 
 vim.lsp.enable("clangd")
 vim.lsp.enable("pyright")
 
-vim.cmd.colorscheme("oldworld")
+vim.cmd.colorscheme("vague")
 
 vim.opt.showtabline = 0
