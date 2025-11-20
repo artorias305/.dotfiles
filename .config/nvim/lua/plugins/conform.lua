@@ -10,6 +10,7 @@ return {
 				lua = { "stylua" },
 				c = { "clangd" },
 				python = { "black" },
+				rust = { "rust-analyzer" },
 			},
 		})
 	end,
