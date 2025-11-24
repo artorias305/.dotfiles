@@ -1,0 +1,5 @@
+font_family JetBrainsMono Nerd Font
+disable_ligatures always
+cursor_shape block
+shell_integration no-cursor
+macos_option_as_alt yes

@@ -4,11 +4,9 @@ TERM = "screen-256color"
 [font]
 size = 13
 
-# [font.normal]
+[font.normal]
 # family = "FiraCode Nerd Font"
 # style = "Regular"
-
-[font.normal]
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
@@ -67,3 +65,5 @@ y = 0
 [general]
 import = ["~/.config/alacritty/themes/bloodmoon.toml"]
 # import = ["~/.config/alacritty/alacritty-theme/themes/catppuccin_mocha.toml"]
+# import = ["~/.config/alacritty/alacritty-theme/themes/catppuccin_mocha.toml"]
+live_config_reload = true

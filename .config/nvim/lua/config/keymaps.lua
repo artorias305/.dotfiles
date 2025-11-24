@@ -15,3 +15,10 @@ map({ "n", "v", "x" }, "<leader>y", '"+y')
 map({ "n", "v" }, "<C-c>", ":noh<CR>")
 
 map("n", "<leader>v", ":edit $MYVIMRC<CR>")
+
+map("n", "<leader>ar", function()
+	vim.cmd("!run_asm " .. vim.fn.expand("%"))
+end)
+map("n", "<leader>ad", function()
+	vim.cmd("!run_asm " .. vim.fn.expand("%") .. " -d")
+end)

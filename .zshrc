@@ -6,6 +6,7 @@ PROMPT='[%n:%m %~]$ '
 
 export PATH="/Users/kiq/8086-TASM-RUN:$PATH"
 export PATH="/Users/kiq/.config/emacs/bin:$PATH"
+export PATH="/Users/kiq/.cargo/bin:$PATH"
 
 bindkey -e
 

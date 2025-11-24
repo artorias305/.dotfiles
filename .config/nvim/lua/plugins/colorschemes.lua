@@ -38,4 +38,8 @@ return {
 			})
 		end,
 	},
+	{
+		"ellisonleao/gruvbox.nvim",
+		config = true,
+	},
 }
