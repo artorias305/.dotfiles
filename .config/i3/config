@@ -200,3 +200,5 @@ for_window [class="kitty"] border none
 exec --no-startup-id setxkbmap -layout us -variant intl
 
 exec --no-startup-id picom
+
+bindsym $mod+Shift+s exec --no-startup-id scrot -s /tmp/screenshot.png && xclip -selection clipboard -target image/png -i /tmp/screenshot.png && rm /tmp/screenshot.png
