@@ -23,14 +23,14 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 alias cmake="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
-alias vim="nvim"
+# alias vim="nvim"
 alias src="source ~/.zshrc"
 alias ls="ls -F --color=auto"
 alias ll="eza -l -g --icons"
 alias lg="lazygit"
 
 export EDITOR="nvim"
-export MANPAGER="nvim +Man!"
+# export MANPAGER="nvim +Man!"
 export HISTIGNORE='exit:cd:ls:bg:fg:history:f:fd:vim'
 
 lazy_load_nvm() {
