@@ -88,10 +88,10 @@
 (tool-bar-mode -1)
 (setq inhibit-startup-screen t)
 
-(use-package gruber-darker-theme
-  :ensure t
-  :config
-  (load-theme 'gruber-darker t))
+;; (use-package gruber-darker-theme
+  ;; :ensure t
+  ;; :config
+  ;; (load-theme 'gruber-darker t))
 
 (use-package vterm
   :ensure t)
@@ -107,3 +107,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq auto-save-default nil)
+(setq make-backup-files nil)
