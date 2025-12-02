@@ -17,9 +17,10 @@ return {
 		"Mofiqul/vscode.nvim",
 		name = "vscode",
 		config = function()
-			--     vim.cmd('hi Directory guibg=NONE')
-			--     vim.cmd('hi SignColumn guibg=NONE')
-			--     enable_transparency()
+			require("vscode").setup({
+				transparent = true,
+				terminal_colors = true,
+			})
 		end,
 	},
 	{
@@ -28,9 +29,9 @@ return {
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
-				transparent_background = true
+				transparent_background = true,
 			})
-		end
+		end,
 	},
 	{
 		"dgox16/oldworld.nvim",
