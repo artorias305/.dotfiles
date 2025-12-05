@@ -52,3 +52,10 @@ export LC_ALL=en_US.UTF-8
 eval "$(fzf --zsh)"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# bun completions
+[ -s "/Users/kiq/.bun/_bun" ] && source "/Users/kiq/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
