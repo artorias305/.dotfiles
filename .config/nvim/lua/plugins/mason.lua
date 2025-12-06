@@ -13,7 +13,7 @@ return {
 					"lua_ls",
 					"clangd",
 					"gopls",
-					"typescript-language-server",
+					"ts_ls",
 					"pyright",
 				},
 			})
