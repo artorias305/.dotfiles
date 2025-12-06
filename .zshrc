@@ -1,15 +1,19 @@
-PROMPT='[%n:%m %~]$ '
+autoload -U colors && colors
+bindkey -v
+PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+
+mkcd() {
+	mkdir -p "$1" && cd "$1"
+}
+
+_comp_options+=(globdots)
 
 export PATH="/Users/kiq/8086-TASM-RUN:/Users/kiq/.config/emacs/bin:/Users/kiq/.cargo/bin:$PATH"
 
-bindkey -e
-
-# macOS-specific setup
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
         export PATH="/opt/homebrew/bin:$PATH"
     fi
-
     export PATH="/Users/kiq/.local/bin:$PATH"
     export C_INCLUDE_PATH="$(brew --prefix)/include:$C_INCLUDE_PATH"
     export LIBRARY_PATH="$(brew --prefix)/lib:$LIBRARY_PATH"
@@ -22,29 +26,19 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 fi
 
+autoload -U compinit && compinit
+autoload -U colors && colors
+
 alias cmake="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
-# alias vim="nvim"
+alias vim="nvim"
 alias src="source ~/.zshrc"
 alias ls="ls -F --color=auto"
 alias ll="eza -l -g --icons"
 alias lg="lazygit"
 
 export EDITOR="nvim"
-# export MANPAGER="nvim +Man!"
+export MANPAGER="nvim +Man!"
 export HISTIGNORE='exit:cd:ls:bg:fg:history:f:fd:vim'
-
-lazy_load_nvm() {
-    unset -f node nvm
-    export NVM_DIR=~/.nvm
-    [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-}
-
-nvm() {
-    unset -f node
-    export NVM_DIR=~/.nvm
-    [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-    command nvm "$@"
-}
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -53,9 +47,10 @@ eval "$(fzf --zsh)"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# bun completions
-[ -s "/Users/kiq/.bun/_bun" ] && source "/Users/kiq/.bun/_bun"
-
-# bun
+[ -s "/home/kiq/.bun/_bun" ] && source "/home/kiq/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$PATH:/home/kiq/.local/bin"
+
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
