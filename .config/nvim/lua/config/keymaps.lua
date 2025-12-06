@@ -13,7 +13,3 @@ map("n", "<leader>tp", ":TypstPreview<CR>")
 map({ "n", "v", "x" }, "<leader>y", '"+y')
 
 map({ "n", "v" }, "<C-c>", ":noh<CR>")
-
-map("n", "<leader>v", ":edit $MYVIMRC<CR>")
-
-map("n", "<leader>d", ":Dashboard<CR>", { desc = "Dashboard" })

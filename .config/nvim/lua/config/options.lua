@@ -18,6 +18,6 @@ vim.cmd([[set mouse=a]])
 vim.lsp.enable("clangd")
 vim.lsp.enable("pyright")
 
-vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vague")
 
 vim.opt.showtabline = 0
