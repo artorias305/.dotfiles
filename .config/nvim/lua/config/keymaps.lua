@@ -13,3 +13,7 @@ map("n", "<leader>tp", ":TypstPreview<CR>")
 map({ "n", "v", "x" }, "<leader>y", '"+y')
 
 map({ "n", "v" }, "<C-c>", ":noh<CR>")
+
+map("n", "<leader>s", "", { desc = "Split screen" })
+map("n", "<leader>sv", ":vsplit<CR>", { desc = "Vertical split" })
+map("n", "<leader>sh", ":split<CR>", { desc = "Horizontal split" })

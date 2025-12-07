@@ -23,7 +23,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH}:/opt/homebrew/opt/raylib/include"
     export LIBRARY_PATH="${LIBRARY_PATH}:/opt/homebrew/opt/glfw/lib"
     export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
-    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 fi
 
 autoload -U compinit && compinit
@@ -54,3 +53,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:/home/kiq/.local/bin"
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
