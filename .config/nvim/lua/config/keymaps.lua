@@ -5,6 +5,7 @@ map("n", "<leader>f", builtin.find_files)
 map("n", "<leader>g", builtin.live_grep)
 map("n", "<leader>t", builtin.colorscheme)
 map("n", "<leader>h", builtin.help_tags)
+map("n", "<leader>b", builtin.buffers)
 
 map("n", "<leader>e", ":Oil<CR>")
 
