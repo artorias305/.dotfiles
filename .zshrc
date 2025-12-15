@@ -8,7 +8,7 @@ mkcd() {
 
 _comp_options+=(globdots)
 
-export PATH="/Users/kiq/8086-TASM-RUN:/Users/kiq/.config/emacs/bin:/Users/kiq/.cargo/bin:$PATH"
+export PATH="/Users/kiq/8086-TASM-RUN:/Users/kiq/.config/emacs/bin:/Users/kiq/.cargo/bin:/home/kiq/.cargo/bin:$PATH"
 
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
