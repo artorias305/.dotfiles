@@ -1,6 +1,7 @@
 autoload -U colors && colors
 bindkey -v
-PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+PROMPT="${NEWLINE}%K{#2E3440}%F{#E5E9F0}$(date +%_I:%M%P) %K{#3b4252}%F{#ECEFF4} %n %K{#4c566a} %~ %f%k ❯ " # nord theme
 
 mkcd() {
 	mkdir -p "$1" && cd "$1"
