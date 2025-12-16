@@ -15,6 +15,6 @@ vim.opt.undofile = true
 vim.cmd([[set noswapfile]])
 vim.cmd([[set mouse=a]])
 
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("catppuccin")
 
 vim.opt.showtabline = 0
