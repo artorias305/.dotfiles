@@ -5,10 +5,10 @@ TERM = "screen-256color"
 size = 13
 
 [font.normal]
-family = "FiraCode Nerd Font"
-style = "Regular"
+family = "Google Sans Code"
+# family = "FiraCode Nerd Font"
 # family = "JetBrainsMono Nerd Font"
-# style = "Regular"
+style = "Regular"
 
 [[keyboard.bindings]]
 action = "ResetFontSize"
