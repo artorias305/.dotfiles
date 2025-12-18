@@ -14,6 +14,9 @@ return {
 					"clangd",
 					"gopls",
 					"ts_ls",
+					"tinymist",
+					"zls",
+					"gopls",
 					"pyright",
 				},
 			})
