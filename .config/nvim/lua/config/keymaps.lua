@@ -22,3 +22,5 @@ map("n", "<leader>sh", ":split<CR>", { desc = "Horizontal split" })
 map("n", "<leader>lw", function()
 	vim.wo.wrap = not vim.wo.wrap
 end, { desc = "Toggle line wrap" })
+
+map("n", "<leader>td", ":e ~/.todo.txt<CR>", { desc = "View todos" })
