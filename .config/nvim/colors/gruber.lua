@@ -29,8 +29,6 @@ vim.api.nvim_set_hl(0, "Character", { fg = string })
 vim.api.nvim_set_hl(0, "Function", { fg = func })
 
 vim.api.nvim_set_hl(0, "Type", { fg = type_ })
-vim.api.nvim_set_hl(0, "Structure", { fg = type_ })
-vim.api.nvim_set_hl(0, "Typedef", { fg = type_ })
 
 vim.api.nvim_set_hl(0, "PreProc", { fg = type_ })
 vim.api.nvim_set_hl(0, "Include", { fg = type_ })
@@ -39,6 +37,13 @@ vim.api.nvim_set_hl(0, "Macro", { fg = type_ })
 
 vim.api.nvim_set_hl(0, "Conditional", { fg = yellow })
 vim.api.nvim_set_hl(0, "Repeat", { fg = yellow })
+vim.api.nvim_set_hl(0, "Structure", { fg = yellow })
+vim.api.nvim_set_hl(0, "Typedef", { fg = yellow })
+vim.api.nvim_set_hl(0, "Label", { fg = yellow })
+
+vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#52494e" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = yellow })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#52494e" })
 
 vim.api.nvim_set_hl(0, "Identifier", { fg = fg })
 vim.api.nvim_set_hl(0, "Keyword", { fg = fg })
