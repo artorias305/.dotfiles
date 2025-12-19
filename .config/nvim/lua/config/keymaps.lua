@@ -24,3 +24,6 @@ map("n", "<leader>lw", function()
 end, { desc = "Toggle line wrap" })
 
 map("n", "<leader>td", ":e ~/.todo.txt<CR>", { desc = "View todos" })
+
+map({ "n", "v" }, "x", '"_x')
+map({ "n", "v" }, "X", '"_X')
