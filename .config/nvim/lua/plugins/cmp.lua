@@ -12,6 +12,9 @@ return {
 				show_on_keyword = false,
 				show_on_insert = false,
 			},
+			menu = {
+				enabled = false,
+			},
 		},
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
