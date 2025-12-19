@@ -1,3 +1,3 @@
 return {
-	"dgox16/oldworld.nvim",
+	{ "dgox16/oldworld.nvim" },
 }

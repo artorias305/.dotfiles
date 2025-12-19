@@ -28,3 +28,5 @@ set laststatus=2
 
 let mapleader = " "
 nnoremap <leader>e :Explore<CR>
+
+set termguicolors

@@ -88,10 +88,10 @@
 (tool-bar-mode -1)
 (setq inhibit-startup-screen t)
 
-;; (use-package gruber-darker-theme
-  ;; :ensure t
-  ;; :config
-  ;; (load-theme 'gruber-darker t))
+(use-package gruber-darker-theme
+  :ensure t
+  :config
+  (load-theme 'gruber-darker t))
 
 (use-package vterm
   :ensure t)
@@ -100,7 +100,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(avy counsel evil-collection evil-commentary evil-surround general
+		 gruber-darker-theme undo-fu vterm)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -15,6 +15,6 @@ vim.opt.undofile = true
 vim.cmd([[set noswapfile]])
 vim.cmd([[set mouse=a]])
 
-vim.cmd.colorscheme("oldworld")
+vim.cmd.colorscheme("gruber")
 
 vim.opt.showtabline = 0
