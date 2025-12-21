@@ -1,15 +1,16 @@
-autoload -U colors && colors
-bindkey -v
-# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
-PROMPT="${NEWLINE}%K{#2E3440}%F{#E5E9F0}$(date +%_I:%M%P) %K{#3b4252}%F{#ECEFF4} %n %K{#4c566a} %~ %f%k ❯ " # nord theme
+export ZSH="$HOME/.oh-my-zsh"
 
-mkcd() {
-	mkdir -p "$1" && cd "$1"
-}
+ZSH_THEME="artorias"
 
-_comp_options+=(globdots)
+plugins=(git zsh-syntax-highlighting)
 
-export PATH="/Users/kiq/8086-TASM-RUN:/Users/kiq/.config/emacs/bin:/Users/kiq/.cargo/bin:/home/kiq/.cargo/bin:$PATH"
+source $ZSH/oh-my-zsh.sh
+
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
@@ -27,34 +28,4 @@ if [[ "$(uname)" == "Darwin" ]]; then
 	. ~/.linuxify
 fi
 
-autoload -U compinit && compinit
-autoload -U colors && colors
-
-alias cmake="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
-alias vim="nvim"
-alias src="source ~/.zshrc"
-alias ls="ls -F --color=auto"
-alias ll="eza -l -g --icons"
-alias lg="lazygit"
-
-export EDITOR="nvim"
-export MANPAGER="nvim +Man!"
-export HISTIGNORE='exit:cd:ls:bg:fg:history:f:fd:vim'
-
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
 eval "$(fzf --zsh)"
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-[ -s "/home/kiq/.bun/_bun" ] && source "/home/kiq/.bun/_bun"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-export PATH="$PATH:/home/kiq/.local/bin"
-
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
