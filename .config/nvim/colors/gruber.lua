@@ -4,7 +4,6 @@ vim.cmd("syntax reset")
 vim.o.background = "dark"
 vim.g.colors_name = "gruber"
 
--- Gruber Darker core palette (directly inspired)
 local bg = "#181818"
 local fg = "#e4e4ef"
 
@@ -43,12 +42,28 @@ vim.api.nvim_set_hl(0, "Label", { fg = yellow })
 
 vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#52494e" })
 vim.api.nvim_set_hl(0, "LineNr", { fg = yellow })
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#52494e" })
+vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#52494e" })
 
 vim.api.nvim_set_hl(0, "Identifier", { fg = fg })
-vim.api.nvim_set_hl(0, "Keyword", { fg = fg })
-vim.api.nvim_set_hl(0, "Statement", { fg = fg })
+vim.api.nvim_set_hl(0, "Keyword", { fg = yellow })
+vim.api.nvim_set_hl(0, "Statement", { fg = yellow })
 vim.api.nvim_set_hl(0, "Constant", { fg = fg })
 vim.api.nvim_set_hl(0, "Number", { fg = fg })
 vim.api.nvim_set_hl(0, "Operator", { fg = fg })
 vim.api.nvim_set_hl(0, "Delimiter", { fg = fg })
+
+vim.api.nvim_set_hl(0, "StatusLine", {
+	fg = "#ffffff",
+	bg = "#282828",
+})
+
+vim.api.nvim_set_hl(0, "StatusLineNC", {
+	fg = "#95a99f",
+	bg = "#181818",
+})
+
+vim.api.nvim_set_hl(0, "StatusLineMode", {
+	fg = "#000000",
+	bg = "#ffdd33",
+	bold = true,
+})

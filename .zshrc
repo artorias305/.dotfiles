@@ -33,3 +33,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 eval "$(fzf --zsh)"
+
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -20,12 +20,6 @@ set smartcase
 set ignorecase
 set showmatch
 
-set backspace=indent,eol,start
-
-set ruler
-
-set laststatus=2
-
 let mapleader = " "
 nnoremap <leader>e :Explore<CR>
 
