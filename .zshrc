@@ -1,10 +1,14 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="artorias"
+#ZSH_THEME="artorias"
 
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+
+ZSH_THEME_GIT_PROMPT_PREFIX="("
+ZSH_THEME_GIT_PROMPT_SUFFIX=")"
+PROMPT='%F{magenta}%~%f %F{green}$(git_prompt_info) > %f'
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
