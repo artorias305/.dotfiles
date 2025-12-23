@@ -1,26 +1,7 @@
 syntax enable
-filetype plugin indent on
-
-set encoding=utf-8
-
-set number
+set tabstop=8
 set relativenumber
-set smartindent
-set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-set wrap
-
 set hlsearch
 set incsearch
 
-set smartcase
-set ignorecase
-set showmatch
-
-let mapleader = " "
-nnoremap <leader>e :Explore<CR>
-
-set termguicolors
+let g:netrw_liststyle = 3

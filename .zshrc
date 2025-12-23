@@ -46,3 +46,6 @@ nvim() {
 
      command nvim "$@"
 }
+
+# opencode
+export PATH=/home/kiq/.opencode/bin:$PATH

@@ -8,12 +8,8 @@ return {
 		},
 		completion = {
 			documentation = { auto_show = false },
-			trigger = {
-				show_on_keyword = false,
-				show_on_insert = false,
-			},
 			menu = {
-				enabled = false,
+				enabled = true,
 			},
 		},
 		sources = {
