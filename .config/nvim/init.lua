@@ -6,6 +6,9 @@ vim.o.signcolumn = "yes"
 
 vim.o.guicursor = ""
 
+vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')
+vim.keymap.set({ "n", "x" }, "<leader>d", '"+d')
+
 vim.keymap.set("n", "<C-c>", ":noh<CR>")
 
 vim.wo.relativenumber = true
@@ -28,13 +31,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 require("lazy").setup({
 	spec = {
 		{
 			"stevearc/oil.nvim",
+			dependencies = {
+				{ "nvim-tree/nvim-web-devicons", opts = {} },
+			},
 			config = function()
 				require("oil").setup({
 					default_file_explorer = true,
@@ -42,6 +45,7 @@ require("lazy").setup({
 						"permissions",
 						"size",
 						"mtime",
+						"icon",
 					},
 				})
 			end,
@@ -266,6 +270,7 @@ require("lazy").setup({
 		},
 		{
 			"nvim-mini/mini.nvim",
+			version = "*",
 			config = function()
 				require("mini.pairs").setup()
 				require("mini.surround").setup()
@@ -279,6 +284,9 @@ require("lazy").setup({
 		{
 			"folke/which-key.nvim",
 		},
+		{
+			"kdheepak/lazygit.nvim",
+		},
 	},
 	install = { colorscheme = { "habamax" } },
 	checker = { enabled = false },
@@ -290,3 +298,5 @@ vim.keymap.set("n", "<leader>f", ":Pick files<CR>", { desc = "Pick Files" })
 vim.keymap.set("n", "<leader>h", ":Pick help<CR>", { desc = "Pick Help" })
 vim.keymap.set("n", "<leader>g", ":Pick grep_live<CR>", { desc = "Pick Grep" })
 vim.keymap.set("n", "<leader>b", ":Pick buffers<CR>", { desc = "Pick Buffers" })
+
+vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>", { desc = "LazyGit" })
