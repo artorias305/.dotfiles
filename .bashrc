@@ -27,4 +27,5 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 . "$HOME/.cargo/env"
 
-export PATH="/usr/local/i386elfgcc/bin:$PATH"
+export PATH="$PATH:/home/kiq/.local/bin"
+. "/home/kiq/.local/share/bob/env/env.sh"
