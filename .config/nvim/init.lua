@@ -4,6 +4,8 @@ vim.g.maplocalleader = "\\"
 vim.o.winborder = "rounded"
 vim.o.signcolumn = "yes"
 
+vim.o.guicursor = ""
+
 vim.keymap.set("n", "<C-c>", ":noh<CR>")
 
 vim.wo.relativenumber = true
@@ -271,6 +273,12 @@ require("lazy").setup({
 				require("mini.statusline").setup()
 			end,
 		},
+		{
+			"nvim-treesitter/nvim-treesitter",
+		},
+		{
+			"folke/which-key.nvim",
+		},
 	},
 	install = { colorscheme = { "habamax" } },
 	checker = { enabled = false },
@@ -278,7 +286,7 @@ require("lazy").setup({
 
 vim.cmd.colorscheme("tokyonight-night")
 
-vim.keymap.set("n", "<leader>f", ":Pick files<CR>")
-vim.keymap.set("n", "<leader>h", ":Pick help<CR>")
-vim.keymap.set("n", "<leader>f", ":Pick files<CR>")
-vim.keymap.set("n", "<leader>f", ":Pick files<CR>")
+vim.keymap.set("n", "<leader>f", ":Pick files<CR>", { desc = "Pick Files" })
+vim.keymap.set("n", "<leader>h", ":Pick help<CR>", { desc = "Pick Help" })
+vim.keymap.set("n", "<leader>g", ":Pick grep_live<CR>", { desc = "Pick Grep" })
+vim.keymap.set("n", "<leader>b", ":Pick buffers<CR>", { desc = "Pick Buffers" })
