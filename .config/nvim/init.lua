@@ -274,7 +274,6 @@ require("lazy").setup({
 			config = function()
 				require("mini.pairs").setup()
 				require("mini.surround").setup()
-				require("mini.pick").setup()
 				require("mini.statusline").setup()
 			end,
 		},
@@ -287,6 +286,28 @@ require("lazy").setup({
 		{
 			"kdheepak/lazygit.nvim",
 		},
+		{
+			"dmtrKovalenko/fff.nvim",
+			build = function()
+				require("fff.download").download_or_build_binary()
+			end,
+			opts = {
+				debug = {
+					enabled = true,
+					show_scores = true,
+				},
+			},
+			lazy = false,
+			keys = {
+				{
+					"<leader>f",
+					function()
+						require("fff").find_files()
+					end,
+					desc = "FFFind files",
+				},
+			},
+		},
 	},
 	install = { colorscheme = { "habamax" } },
 	checker = { enabled = false },
@@ -294,7 +315,7 @@ require("lazy").setup({
 
 vim.cmd.colorscheme("tokyonight-night")
 
-vim.keymap.set("n", "<leader>f", ":Pick files<CR>", { desc = "Pick Files" })
+-- vim.keymap.set("n", "<leader>f", ":Pick files<CR>", { desc = "Pick Files" })
 vim.keymap.set("n", "<leader>h", ":Pick help<CR>", { desc = "Pick Help" })
 vim.keymap.set("n", "<leader>g", ":Pick grep_live<CR>", { desc = "Pick Grep" })
 vim.keymap.set("n", "<leader>b", ":Pick buffers<CR>", { desc = "Pick Buffers" })
