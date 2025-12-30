@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+set -o vi
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -23,3 +25,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
 	. ~/.linuxify
 fi
+. "$HOME/.cargo/env"
+
+export PATH="/usr/local/i386elfgcc/bin:$PATH"
