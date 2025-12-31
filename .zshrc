@@ -1,6 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
+
+ZSH_THEME=robbyrussell
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,6 +22,10 @@ if [[ "$(uname)" == "Darwin" ]]; then
 	. ~/.linuxify
 fi
 
+if [[ "$(uname)" == "Linux" ]]; then
+	. "$HOME/.local/share/bob/env/env.sh"
+fi
+
 eval "$(fzf --zsh)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -27,6 +33,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # opencode
 export PATH=/home/kiq/.opencode/bin:$PATH
 
-eval "$(starship init zsh)"
-
-. "/home/kiq/.local/share/bob/env/env.sh"
+alias lg="lazygit"
+alias src="source ~/.zshrc"
