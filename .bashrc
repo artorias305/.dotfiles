@@ -1,13 +1,6 @@
-#
-# ~/.bashrc
-#
-
-set -o vi
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 export EDITOR=nvim
 
 if [[ "$(uname)" == "Darwin" ]]; then
