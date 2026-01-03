@@ -19,7 +19,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH}:/opt/homebrew/opt/raylib/include"
     export LIBRARY_PATH="${LIBRARY_PATH}:/opt/homebrew/opt/glfw/lib"
     export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
-	. ~/.linuxify
+	# . ~/.linuxify
 fi
 
 if [[ "$(uname)" == "Linux" ]]; then
