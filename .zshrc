@@ -23,7 +23,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 if [[ "$(uname)" == "Linux" ]]; then
-	. "$HOME/.local/share/bob/env/env.sh"
+	export PATH="$HOME/.local/bin:$PATH"
 fi
 
 eval "$(fzf --zsh)"
