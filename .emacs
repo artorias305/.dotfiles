@@ -100,9 +100,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(avy counsel evil-collection evil-commentary evil-surround general
-		 gruber-darker-theme undo-fu vterm)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -112,3 +110,25 @@
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
+
+;; Install company mode using use-package
+(use-package company
+  :ensure t
+  :init
+  (global-company-mode 1)  ;; Enable globally
+  :config
+  (setq company-idle-delay 0.2)  ;; Delay before suggestions show up
+  (setq company-minimum-prefix-length 2)  ;; Start suggesting after typing 2 characters
+  (setq company-show-numbers t))  ;; Show numbers next to suggestions for easier selection
+
+;; Optional: Use company for specific modes like C/C++/Python
+(add-hook 'prog-mode-hook 'company-mode)  ;; Enable for programming modes
+
+(setq company-idle-delay nil)
+(setq company-minimum-prefix-length 1)
+
+(define-key evil-insert-state-map (kbd "C-n") 'company-complete-common-or-cycle)
+(define-key evil-insert-state-map (kbd "C-p") 'company-select-previous)
+
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
