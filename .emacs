@@ -132,3 +132,9 @@
 
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
+
+(use-package lua-mode)
+(use-package rust-mode)
+(use-package markdown-mode)
+(use-package go-mode)
+(use-package typescript-mode)
