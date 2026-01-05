@@ -1,8 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git)
+PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
-ZSH_THEME=robbyrussell
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,6 +24,7 @@ fi
 
 if [[ "$(uname)" == "Linux" ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
+	. "/home/kiq/.local/share/bob/env/env.sh"
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
