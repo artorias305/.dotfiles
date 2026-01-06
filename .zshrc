@@ -35,5 +35,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # opencode
 export PATH=/home/kiq/.opencode/bin:$PATH
 
+export EDITOR="nvim"
+
 alias lg="lazygit"
 alias src="source ~/.zshrc"
