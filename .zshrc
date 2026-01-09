@@ -28,10 +28,10 @@ if [[ "$(uname)" == "Linux" ]]; then
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
-
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # opencode
 export PATH=/home/kiq/.opencode/bin:$PATH
