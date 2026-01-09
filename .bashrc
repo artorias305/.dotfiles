@@ -22,3 +22,5 @@ fi
 
 export PATH="$PATH:/home/kiq/.local/bin"
 . "/home/kiq/.local/share/bob/env/env.sh"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
