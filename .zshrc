@@ -29,6 +29,7 @@ if [[ "$(uname)" == "Linux" ]]; then
 fi
 
 eval "$(fzf --zsh)"
+eval "$(starship init zsh)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
