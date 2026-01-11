@@ -40,3 +40,8 @@ export EDITOR="nvim"
 
 alias lg="lazygit"
 alias src="source ~/.zshrc"
+
+# opencode
+export PATH=/Users/kiq/.opencode/bin:$PATH
+
+set -o vi
