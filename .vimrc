@@ -1,5 +1,7 @@
 set nocompatible
 
+let g:loaded_colorresp = 1
+
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
