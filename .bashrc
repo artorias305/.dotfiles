@@ -21,8 +21,7 @@ fi
 
 if [[ "$(uname)" == "Linux" ]]; then
 	. "/home/kiq/.local/share/bob/env/env.sh"
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 fi
-
-export PATH="$PATH:/home/kiq/.local/bin"
 
 PS1='[\u@\h \W]\$ '
