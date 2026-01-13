@@ -1,5 +1,8 @@
 set nocompatible
 filetype off
+filetype indent on
+
+set autoindent
 set number
 set relativenumber
 
@@ -9,7 +12,6 @@ set shiftwidth=8
 set hlsearch
 
 set t_Co=256
-colorscheme zaibatsu
 
 set wildmenu
 
