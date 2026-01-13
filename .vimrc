@@ -21,3 +21,13 @@ syntax on
 let mapleader = " "
 
 nnoremap <leader>e <CMD>Explore<CR>
+
+set background=light
+hi Comment ctermfg=63
+
+call plug#begin()
+Plug 'junegunn/vim-easy-align'
+call plug#end()
+
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
