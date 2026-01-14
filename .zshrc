@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -45,3 +45,14 @@ alias src="source ~/.zshrc"
 export PATH=/Users/kiq/.opencode/bin:$PATH
 
 set -o vi
+
+# bun completions
+[ -s "/home/kiq/.bun/_bun" ] && source "/home/kiq/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
