@@ -44,8 +44,6 @@ alias src="source ~/.zshrc"
 # opencode
 export PATH=/Users/kiq/.opencode/bin:$PATH
 
-set -o vi
-
 # bun completions
 [ -s "/home/kiq/.bun/_bun" ] && source "/home/kiq/.bun/_bun"
 
