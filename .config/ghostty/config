@@ -1,6 +1,6 @@
 # theme = "Solarized Dark Patched"
 # theme = "TokyoNight Moon"
-theme = "tokyonight_night"
+theme = "vesper"
 # theme = "Catppuccin Mocha"
 
 # background-opacity = 0.9
@@ -9,7 +9,7 @@ theme = "tokyonight_night"
 
 # font-family = "PlemolJP Console NF"
 font-family = "JetBrainsMono Nerd Font"
-font-size = 20
+font-size = 18
 shell-integration-features = no-cursor
 #
 cursor-style = block
