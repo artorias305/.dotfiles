@@ -15,6 +15,12 @@ if [[ "$(uname)" == "Linux" ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
 	. "/home/kiq/.local/share/bob/env/env.sh"
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+	# fnm
+	FNM_PATH="/home/kiq/.local/share/fnm"
+	if [ -d "$FNM_PATH" ]; then
+	  export PATH="$FNM_PATH:$PATH"
+	  eval "`fnm env`"
+	fi
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -43,3 +49,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias ll="eza -l -g --git"
 alias llt="eza -1 --git --tree --git-ignore"
+
