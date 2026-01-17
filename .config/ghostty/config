@@ -1,21 +1,12 @@
-# theme = "Solarized Dark Patched"
-# theme = "TokyoNight Moon"
 theme = "vesper"
-# theme = "Catppuccin Mocha"
-
-# background-opacity = 0.9
-# background-blur-radius = 20
-# background = #031219
-
-# font-family = "PlemolJP Console NF"
 font-family = "JetBrainsMono Nerd Font"
+window-padding-x = 8
+window-padding-y = 8
+mouse-hide-while-typing = true
 font-size = 18
 shell-integration-features = no-cursor
-#
 cursor-style = block
 cursor-style-blink = false
-
-
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
