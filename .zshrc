@@ -47,6 +47,6 @@ export PATH=/Users/kiq/.opencode/bin:$PATH
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias ll="eza -l -g --git"
+alias ll="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias llt="eza -1 --git --tree --git-ignore"
 
