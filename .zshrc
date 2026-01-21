@@ -47,6 +47,13 @@ export PATH=/Users/kiq/.opencode/bin:$PATH
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias ll="eza -l -g --git"
-alias llt="eza -1 --git --tree --git-ignore"
+if command -v eza &> /dev/null; then
+	alias ls='eza -lg --group-directories-first --icons=auto'
+	alias lt='eza --tree --level=2 --long --icons --git'
+fi
 
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+export BAT_THEME=ansi
