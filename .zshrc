@@ -1,8 +1,6 @@
-export ZSH="$HOME/.oh-my-zsh"
-
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
+# export ZSH="$HOME/.oh-my-zsh"
+# plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+# source $ZSH/oh-my-zsh.sh
 
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
