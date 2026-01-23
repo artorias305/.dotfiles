@@ -1,8 +1,6 @@
-export ZSH="$HOME/.oh-my-zsh"
-
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
+# export ZSH="$HOME/.oh-my-zsh"
+# plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+# source $ZSH/oh-my-zsh.sh
 
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
@@ -47,6 +45,13 @@ export PATH=/Users/kiq/.opencode/bin:$PATH
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias ll="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias llt="eza -1 --git --tree --git-ignore"
+if command -v eza &> /dev/null; then
+	alias ls='eza -lg --group-directories-first --icons=auto'
+	alias lt='eza --tree --level=2 --long --icons --git'
+fi
 
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+export BAT_THEME=ansi
