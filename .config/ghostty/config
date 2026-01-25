@@ -1,12 +1,14 @@
-theme = "vesper"
-font-family = "JetBrainsMono Nerd Font"
-window-padding-x = 8
-window-padding-y = 8
+# theme = "tokyonight_night"
+# font-family = "JetBrainsMono Nerd Font"
+# window-padding-x = 8
+# window-padding-y = 8
 mouse-hide-while-typing = true
-font-size = 18
+# font-size = 16
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+# background-blur-radius=40
+# background-opacity=0.95
