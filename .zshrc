@@ -52,6 +52,8 @@ fi
 
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 export BAT_THEME=ansi
+
+eval "$(rbenv init - zsh)"
