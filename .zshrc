@@ -7,6 +7,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
         export PATH="/opt/homebrew/bin:$PATH"
     fi
     export PATH="/Users/kiq/.local/bin:$PATH"
+    export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 fi
 
 if [[ "$(uname)" == "Linux" ]]; then
@@ -23,10 +24,6 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-eval "$(fzf --zsh)"
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-
 # opencode
 export PATH=/home/kiq/.opencode/bin:$PATH
 
@@ -34,9 +31,6 @@ export EDITOR="nvim"
 
 alias lg="lazygit"
 alias src="source ~/.zshrc"
-
-# opencode
-export PATH=/Users/kiq/.opencode/bin:$PATH
 
 # bun completions
 [ -s "/home/kiq/.bun/_bun" ] && source "/home/kiq/.bun/_bun"
@@ -50,10 +44,10 @@ if command -v eza &> /dev/null; then
 	alias lt='eza --tree --level=2 --long --icons --git'
 fi
 
+eval "$(fzf --zsh)"
+
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
 export PATH="$HOME/bin:$PATH"
 
 export BAT_THEME=ansi
-
-eval "$(rbenv init - zsh)"
