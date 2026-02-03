@@ -16,6 +16,9 @@ set t_Co=256
 set wildmenu
 
 set colorcolumn=80
+set background=light
+hi Comment ctermfg=63
+hi Search ctermbg=LightYellow
 syntax on
 
 let mapleader = " "

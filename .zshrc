@@ -13,7 +13,6 @@ fi
 if [[ "$(uname)" == "Linux" ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
 	. "/home/kiq/.local/share/bob/env/env.sh"
-	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 	# fnm
 	FNM_PATH="/home/kiq/.local/share/fnm"
 	if [ -d "$FNM_PATH" ]; then
@@ -45,6 +44,7 @@ if command -v eza &> /dev/null; then
 fi
 
 eval "$(fzf --zsh)"
+eval "$(starship init zsh)"
 
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
