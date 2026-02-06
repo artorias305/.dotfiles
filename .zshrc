@@ -1,6 +1,6 @@
-# export ZSH="$HOME/.oh-my-zsh"
-# plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
-# source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
 
 if [[ "$(uname)" == "Darwin" ]]; then
     if [[ -d /opt/homebrew/bin ]]; then
@@ -51,3 +51,5 @@ alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 export PATH="$HOME/bin:$PATH"
 
 export BAT_THEME=ansi
+
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --color=bg:#101010,bg+:#232323,fg:#A0A0A0,fg+:#FFFFFF,hl:#FFC799,hl+:#FFC799,pointer:#FFC799,prompt:#FFC799,info:#5C5C5C"
