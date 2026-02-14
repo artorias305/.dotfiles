@@ -48,19 +48,19 @@ export EDITOR="nvim"
 export BAT_THEME="ansi"
 export ODIN_ROOT="$HOME/Odin"
 
-export FZF_DEFAULT_OPTS="
---height=40%
---layout=reverse 
---border
---color=bg:#101010,bg+:#232323,fg:#A0A0A0,fg+:#FFFFFF,hl:#FFC799,hl+:#FFC799,pointer:#FFC799,prompt:#FFC799,info:#5C5C5C
-"
+# export FZF_DEFAULT_OPTS="
+# --height=40%
+# --layout=reverse 
+# --border
+# --color=bg:#101010,bg+:#232323,fg:#A0A0A0,fg+:#FFFFFF,hl:#FFC799,hl+:#FFC799,pointer:#FFC799,prompt:#FFC799,info:#5C5C5C
+# "
 
 eval "$(fzf --zsh)"
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
-alias ll="eza -l -g --git"
-alias llt="eza -1 --git --tree --git-ignore"
-alias la="eza -la -g --git"
+# alias ll="eza -l -g --git"
+# alias llt="eza -1 --git --tree --git-ignore"
+# alias la="eza -la -g --git"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
