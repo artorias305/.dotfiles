@@ -1,5 +1,9 @@
-theme = "vesper"
-font-family = "TX-02"
+theme = "Solarized Dark Patched"
+background-opacity = 0.9
+background-blur-radius = 20
+background = #031219
+# font-family = "TX-02"
+font-family = "PlemolJP Console NF"
 window-padding-x = 8
 window-padding-y = 8
 mouse-hide-while-typing = true

@@ -1,8 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git zsh-syntax-highlighting)
+ZSH_THEME="robbyrussell"
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-
-PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
@@ -60,9 +59,9 @@ export ODIN_ROOT="$HOME/Odin"
 eval "$(fzf --zsh)"
 # eval "$(starship init zsh)"
 
-# alias ll="eza -l -g --git"
-# alias llt="eza -1 --git --tree --git-ignore"
-# alias la="eza -la -g --git"
+alias ls="ls -p -G"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+[ -f "/Users/kiq/.ghcup/env" ] && . "/Users/kiq/.ghcup/env" # ghcup-env
