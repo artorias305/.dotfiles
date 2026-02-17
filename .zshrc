@@ -18,10 +18,6 @@ case "$OS" in
 	Linux)
 		path_prepend "$HOME/.local/bin"
 
-		# bob
-		[[ -f "$HOME/.local/share/bob/env/env.sh" ]] &&
-			source "$HOME/.local/share/bob/env/env.sh"
-		
 		# fnm
 		FNM_PATH="$HOME/.local/share/fnm"
 		if [ -d "$FNM_PATH" ]; then
@@ -46,22 +42,10 @@ path_prepend "$HOME/bin"
 
 # env
 export EDITOR="nvim"
-export BAT_THEME="ansi"
-export ODIN_ROOT="$HOME/Odin"
-
-# export FZF_DEFAULT_OPTS="
-# --height=40%
-# --layout=reverse 
-# --border
-# --color=bg:#101010,bg+:#232323,fg:#A0A0A0,fg+:#FFFFFF,hl:#FFC799,hl+:#FFC799,pointer:#FFC799,prompt:#FFC799,info:#5C5C5C
-# "
 
 eval "$(fzf --zsh)"
-# eval "$(starship init zsh)"
 
-alias ls="ls -p -G"
+alias ls="eza"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
-
-[ -f "/Users/kiq/.ghcup/env" ] && . "/Users/kiq/.ghcup/env" # ghcup-env
