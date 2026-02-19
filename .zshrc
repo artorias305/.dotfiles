@@ -1,7 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+# ZSH_THEME="robbyrussell"
+plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+
+PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
@@ -49,3 +51,6 @@ alias ls="eza"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+# nim
+export PATH=/home/kiq/.nimble/bin:$PATH
