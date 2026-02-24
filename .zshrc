@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
@@ -46,6 +46,7 @@ path_prepend "$HOME/bin"
 export EDITOR="nvim"
 
 eval "$(fzf --zsh)"
+eval "$(starship init zsh)"
 
 alias ls="eza"
 alias lg="lazygit"
