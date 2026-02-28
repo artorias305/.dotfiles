@@ -6,9 +6,12 @@ set SPACEFISH_PROMPT_ADD_NEWLINE false
 
 starship init fish | source
 
-alias cat="bat"
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias src="source ~/.config/fish/config.fish"
+# alias cat="bat"
+# alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+# alias src="source ~/.config/fish/config.fish"
+
+alias ls="ls --color"
+alias vim="nvim"
 alias lg="lazygit"
 
 # bun
@@ -16,3 +19,11 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 fish_add_path ~/.opencode/bin
+fish_add_path ~/.cargo/bin
+
+# fnm
+set FNM_PATH "/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]
+  fnm env | source
+end
+
