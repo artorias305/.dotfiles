@@ -10,3 +10,9 @@ alias cat="bat"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias src="source ~/.config/fish/config.fish"
 alias lg="lazygit"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+fish_add_path ~/.opencode/bin
