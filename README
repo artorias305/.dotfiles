@@ -1,6 +1,5 @@
-Current tech stack
-==================
-EDITOR: nvim [config](https://github.com/artorias305/nvim.git)
-TERMINAL: ghostty
-SHELL: zsh + starship
-TERMINAL MULTIPLEXER: tmux
+Used apps:
+- nvim
+- ghostty
+- helium browser
+- notion (trying)
