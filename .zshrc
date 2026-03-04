@@ -1,9 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-
-# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
@@ -46,12 +44,20 @@ path_prepend "$HOME/bin"
 export EDITOR="nvim"
 
 eval "$(fzf --zsh)"
-eval "$(starship init zsh)"
 
-alias ls="eza"
+alias ls="ls --color"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
-# nim
-export PATH=/home/kiq/.nimble/bin:$PATH
+finder() {
+    open .
+}
+
+zle -N finder
+bindkey '^f' finder
+
+zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+export MANPAGER="nvim +Man!"

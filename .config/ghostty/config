@@ -1,15 +1,10 @@
-theme = "tokyonight_night"
-# background-opacity = 0.9
-# background-blur-radius = 20
-# background = #031219
-font-family = "JetBrainsMono Nerd Font"
-# window-padding-x = 8
-# window-padding-y = 8
-# mouse-hide-while-typing = true
+theme = "vesper"
+font-family = "GeistMono Nerd Font"
 font-size = 18
-shell-integration-features = no-cursor
-cursor-style = block
-cursor-style-blink = false
 macos-option-as-alt = left
-# keybind = alt+left=unbind
-# keybind = alt+right=unbind
+font-feature = -liga
+window-padding-color = background
+keybind = super+h=goto_split:left
+keybind = super+j=goto_split:down
+keybind = super+k=goto_split:up
+keybind = super+l=goto_split:right
