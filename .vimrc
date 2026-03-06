@@ -1,33 +1,22 @@
+" Basic settings
 set nocompatible
-filetype off
-filetype indent on
-
-set autoindent
-set number
-set relativenumber
-
-set tabstop=8
-set shiftwidth=8
-
-set hlsearch
-
-set t_Co=256
-
-set wildmenu
-
-set colorcolumn=80
-set background=light
-hi Comment ctermfg=63
-hi Search ctermbg=LightYellow
 syntax on
+set number relativenumber
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set hidden
 
-let mapleader = " "
+" Better completion sources
+set complete=.,w,b,u,t,i
 
-nnoremap <leader>e <CMD>Explore<CR>
+" Don't show automatic popup menu
+set completeopt=menu,menuone,noinsert,noselect
 
-call plug#begin()
-Plug 'junegunn/vim-easy-align'
-call plug#end()
+" Trigger completion only with Tab
+inoremap <Tab> <C-x><C-o>
+inoremap <S-Tab> <C-p>
 
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+" Use dictionary fallback if omni completion not available
+autocmd FileType text setlocal omnifunc=complete#omnifunc
