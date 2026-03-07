@@ -1,8 +1,10 @@
-theme = "vesper"
-font-family = "GeistMono Nerd Font"
+theme = "oldworld"
+font-family = "Iosevka Nerd Font"
 font-size = 16
 macos-option-as-alt = left
 font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
 window-padding-color = background
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:down
