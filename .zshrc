@@ -44,7 +44,6 @@ path_prepend "$HOME/bin"
 export EDITOR="nvim"
 
 eval "$(fzf --zsh)"
-eval "$(starship init zsh)"
 
 alias ls="ls --color"
 alias lg="lazygit"
@@ -61,7 +60,7 @@ bindkey '^f' finder
 zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-export MANPAGER="nvim +Man!"
+#export MANPAGER="nvim +Man!"
 
 # opencode
 export PATH=/Users/kiq/.opencode/bin:$PATH
