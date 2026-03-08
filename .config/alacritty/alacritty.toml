@@ -9,13 +9,9 @@ family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
-decorations = "full"
+decorations = "none"
 dynamic_title = true
 option_as_alt = "Both"
-
-[window.dimensions]
-columns = 160
-lines = 80
 
 [window.padding]
 x = 8
