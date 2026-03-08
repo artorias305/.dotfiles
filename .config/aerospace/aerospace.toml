@@ -33,6 +33,7 @@ alt-9 = 'workspace 9'
 alt-a = 'workspace 1'
 alt-s = 'workspace S'
 alt-g = 'workspace G'
+alt-n = 'workspace N'
 
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
@@ -47,6 +48,7 @@ alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-a = 'move-node-to-workspace 1'
 alt-shift-s = 'move-node-to-workspace S'
 alt-shift-g = 'move-node-to-workspace G'
+alt-shift-n = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
@@ -75,3 +77,7 @@ run = 'move-node-to-workspace G'
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
+if.app-id = 'notion.id'
+run = 'move-node-to-workspace N'
