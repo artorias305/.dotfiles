@@ -1,11 +1,13 @@
-theme = "oldworld"
-font-family = "Iosevka Nerd Font"
-font-size = 16
+#theme = "custom_twilight"
+#font-family = "Iosevka Nerd Font"
+#font-size = 16
 macos-option-as-alt = left
-font-feature = -liga
-font-feature = -calt
-font-feature = -dlig
-window-padding-color = background
+#font-feature = -liga
+#font-feature = -calt
+#font-feature = -dlig
+#window-padding-color = background
+#cursor-style = block
+#shell-integration-features = no-cursor
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:down
 keybind = super+k=goto_split:up

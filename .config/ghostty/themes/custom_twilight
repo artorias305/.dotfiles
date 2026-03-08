@@ -1,0 +1,22 @@
+background = #202020
+foreground = #FEFEFE
+cursor-color = #FFFEDB
+selection-background = #454545
+
+palette = 0=#202020
+palette = 1=#C34143
+palette = 2=#A2A970
+palette = 3=#E3D896
+palette = 4=#8B9698
+palette = 5=#AA9AAC
+palette = 6=#6F7B68
+palette = 7=#CCCCCC
+
+palette = 8=#303030
+palette = 9=#C34143
+palette = 10=#C1C88D
+palette = 11=#DEBF7C
+palette = 12=#A09998
+palette = 13=#BFBBBA
+palette = 14=#8B9698
+palette = 15=#FEFEFE
