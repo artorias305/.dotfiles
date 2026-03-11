@@ -1,7 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+
+PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
@@ -64,3 +66,6 @@ bindkey '^e' edit-command-line
 
 # opencode
 export PATH=/Users/kiq/.opencode/bin:$PATH
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+. ~/.asdf/plugins/java/set-java-home.zsh
