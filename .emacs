@@ -100,23 +100,6 @@
 (use-package consult)
 
 ;; -------------------------
-;; On-demand autocomplete
-;; -------------------------
-
-(use-package corfu
-  :init
-  (global-corfu-mode)
-  :custom
-  (corfu-auto nil) ;; disable automatic popup
-  :bind
-  (:map corfu-map
-        ("C-n" . corfu-next)
-        ("C-p" . corfu-previous)))
-
-(global-set-key (kbd "C-n") #'completion-at-point)
-
-
-;; -------------------------
 ;; Leader key bindings
 ;; -------------------------
 
@@ -127,6 +110,8 @@
  "ff" '(find-file :which-key "find file")
  "fg" '(consult-ripgrep :which-key "grep")
  "cc" '(compile :which-key "compile")
+ "a" '(org-agenda :which-key "org agenda")
+ "r" '(eval-buffer :which-key "eval buffer")
 )
 
 ;; -------------------------
@@ -147,14 +132,21 @@
 
 (setq ring-bell-function 'ignore)
 
+(setq evil-normal-state-cursor 'box)
+(setq evil-insert-state-cursor 'box)
+(setq evil-visual-state-cursor 'box)
+(setq evil-replace-state-cursor 'box)
+(setq evil-operator-state-cursor 'box)
+(setq evil-emacs-state-cursor 'box)
+
+(setq org-agenda-files '("~/exams.org"))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(consult corfu doom-modeline doom-themes evil general lsp-mode lsp-ui
-             magit marginalia orderless projectile vertico)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
