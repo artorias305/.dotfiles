@@ -118,6 +118,8 @@
 ;; Misc improvements
 ;; -------------------------
 
+(use-package go-mode)
+
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
@@ -146,7 +148,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(company consult corfu dashboard doom-modeline doom-themes evil
+             general go-mode marginalia orderless vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
