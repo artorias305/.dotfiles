@@ -1,22 +1,32 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+# Commands to run in interactive sessions can go here
 end
 
-fzf --fish | source
+set -g __done_min_cmd_duration 10000
 
-alias src="source ~/.config/fish/config.fish"
-alias lg="lazygit"
+set -g __fish_git_prompt_char_stateseparator ' '
+set -g __fish_git_prompt_use_informative_chars 'yes'
+set -g __fish_git_prompt_color_dirtystate yellow
+set -g __fish_git_prompt_color $fish_color_normal
+set -g __fish_git_prompt_color_flags $fish_color_status
+set -g __fish_git_prompt_color_branch $fish_color_cwd
+set -g __fish_git_prompt_char_dirtystate '~'
+set -g __fish_git_prompt_char_untrackedfiles '+'
+set -g __fish_git_prompt_showuntrackedfiles 'yes'
+set -g __fish_git_prompt_showupstream 'no'
+set -g __fish_git_prompt_show_informative_status 'no'
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+set -g _prompt_success_color (set_color cyan)
+set -g _prompt_status_color (set_color $fish_color_status 2>/dev/null; or set_color red --bold)
+set -g _prompt_user_color (set_color $fish_color_user 2>/dev/null; or set_color cyan)
+set -g _prompt_cwd_color (set_color $fish_color_cwd 2>/dev/null; or set_color green)
+set -g _prompt_normal (set_color normal)
+
+
+abbr --add 'lg' 'lazygit'
+abbr --add 'src' 'source ~/.config/fish/config.fish'
 
 fish_add_path ~/.opencode/bin
-fish_add_path ~/.cargo/bin
 
-# fnm
-set FNM_PATH "/opt/homebrew/opt/fnm/bin"
-if [ -d "$FNM_PATH" ]
-  fnm env | source
-end
-
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
