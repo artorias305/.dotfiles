@@ -2,6 +2,8 @@ if status is-interactive
 # Commands to run in interactive sessions can go here
 end
 
+set -g fish_greeting ""
+
 set -g __done_min_cmd_duration 10000
 
 set -g __fish_git_prompt_char_stateseparator ' '
@@ -27,6 +29,9 @@ abbr --add 'lg' 'lazygit'
 abbr --add 'src' 'source ~/.config/fish/config.fish'
 
 fish_add_path ~/.opencode/bin
+fish_add_path ~/.cargo/bin
 
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+set --export EDITOR nvim
