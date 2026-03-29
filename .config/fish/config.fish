@@ -28,6 +28,8 @@ set -g _prompt_normal (set_color normal)
 abbr --add 'lg' 'lazygit'
 abbr --add 'src' 'source ~/.config/fish/config.fish'
 
+abbr --add 'ls' 'eza -l --icons --git --no-permissions --no-filesize --no-user --no-time'
+
 fish_add_path ~/.opencode/bin
 fish_add_path ~/.cargo/bin
 
@@ -35,3 +37,5 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 set --export EDITOR nvim
+
+starship init fish | source
