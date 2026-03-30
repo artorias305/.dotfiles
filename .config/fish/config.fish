@@ -27,8 +27,10 @@ set -g _prompt_normal (set_color normal)
 
 abbr --add 'lg' 'lazygit'
 abbr --add 'src' 'source ~/.config/fish/config.fish'
+abbr --add 'cat' 'bat'
 
-abbr --add 'ls' 'eza -l --icons --git --no-permissions --no-filesize --no-user --no-time'
+# abbr --add 'ls' 'eza -l --icons --git --no-permissions --no-filesize --no-user --no-time'
+# alias ls="eza -l --icons --git --no-permissions --no-filesize --no-user --no-time"
 
 fish_add_path ~/.opencode/bin
 fish_add_path ~/.cargo/bin
