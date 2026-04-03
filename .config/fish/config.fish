@@ -34,10 +34,11 @@ abbr --add 'cat' 'bat'
 
 fish_add_path ~/.opencode/bin
 fish_add_path ~/.cargo/bin
+fish_add_path ~/.local/bin
 
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 set --export EDITOR nvim
 
-starship init fish | source
+# starship init fish | source
