@@ -1,9 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
 
 OS="$(uname)"
 
