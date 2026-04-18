@@ -46,6 +46,7 @@ path_prepend "$HOME/bin"
 export EDITOR="nvim"
 
 eval "$(fzf --zsh)"
+# eval "$(starship init zsh)"
 
 alias ls="ls --color"
 alias lg="lazygit"
