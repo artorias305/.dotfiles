@@ -1,6 +1,10 @@
-theme = "tokyonight_night"
+theme = tokyonight_night
 macos-option-as-alt = left
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:down
 keybind = super+k=goto_split:up
 keybind = super+l=goto_split:right
+window-inherit-working-directory = true
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
+unfocused-split-opacity = 1.0

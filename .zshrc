@@ -1,69 +1,70 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-syntax-highlighting)
+
 source $ZSH/oh-my-zsh.sh
 
-# PS1="%{$fg[magenta]%}%~%{$fg[red]%} %{$reset_color%}$%b "
+export EDITOR="nvim"
+
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
+setopt AUTO_CD
+
+path_prepend() {
+  [[ -d "$1" ]] && export PATH="$1:$PATH"
+}
 
 OS="$(uname)"
 
-path_prepend() {
-	[[ -d "$1" ]] && export PATH="$1:$PATH"
-}
-
 case "$OS" in
-	Darwin)
-		path_prepend /opt/homebrew/bin
-		path_prepend /opt/homebrew/opt/llvm/bin
-		path_prepend "$HOME/.local/bin"
-		;;
-	Linux)
-		path_prepend "$HOME/.local/bin"
+  Darwin)
+    path_prepend /opt/homebrew/bin
+    path_prepend /opt/homebrew/opt/llvm/bin
+    path_prepend "$HOME/.local/bin"
+    ;;
+  Linux)
+    path_prepend "$HOME/.local/bin"
 
-		# fnm
-		FNM_PATH="$HOME/.local/share/fnm"
-		if [ -d "$FNM_PATH" ]; then
-			path_prepend "$FNM_PATH"
-			eval "$(fnm env)"
-		fi
-		;;
+    FNM_PATH="$HOME/.local/share/fnm"
+    if [ -d "$FNM_PATH" ]; then
+      path_prepend "$FNM_PATH"
+      eval "$(fnm env)"
+    fi
+    ;;
 esac
 
 path_prepend "$HOME/.cargo/bin"
-
-# opencode
 path_prepend "$HOME/.opencode/bin"
+path_prepend "$HOME/bin"
 
-# bun
 export BUN_INSTALL="$HOME/.bun"
 path_prepend "$BUN_INSTALL/bin"
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
 
-# user bin
-path_prepend "$HOME/bin"
-
-# env
-export EDITOR="nvim"
-
-eval "$(fzf --zsh)"
-# eval "$(starship init zsh)"
-
-alias ls="ls --color"
+alias ls="ls --color=auto"
 alias lg="lazygit"
 alias src="source ~/.zshrc"
-alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
-finder() {
+if command -v fzf >/dev/null 2>&1; then
+  eval "$(fzf --zsh)"
+
+  alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+  finder() {
     open .
-}
+  }
 
-zle -N finder
-bindkey '^f' finder
+  zle -N finder
+  bindkey '^f' finder
+fi
 
+autoload -z edit-command-line
 zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-#export MANPAGER="nvim +Man!"
+path_prepend "$HOME/.config/emacs/bin"
 
-# opencode
-export PATH=/Users/kiq/.opencode/bin:$PATH
+[[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH" # Kaku PATH Integration
+[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
