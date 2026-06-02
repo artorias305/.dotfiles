@@ -1,0 +1,29 @@
+# Nord-inspired, neon-accent theme
+# Colors only (Ghostty)
+
+background = #282c34
+foreground = #9cdef2
+
+cursor-color = #528bff
+cursor-text = #9cdef2
+
+selection-background = #3e4451
+selection-foreground = #9cdef2
+
+palette = 0=#2e3440
+palette = 1=#e06c75
+palette = 2=#9cdef2
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#9cdef2
+palette = 7=#828997
+
+palette = 8=#4c566a
+palette = 9=#e06c75
+palette = 10=#9cdef2
+palette = 11=#e5c07b
+palette = 12=#61afef
+palette = 13=#c678dd
+palette = 14=#9cdef2
+palette = 15=#9cdef2

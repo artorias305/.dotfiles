@@ -1,4 +1,4 @@
-theme = tokyonight_night
+theme = pewd
 macos-option-as-alt = left
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:down
@@ -8,3 +8,5 @@ window-inherit-working-directory = true
 tab-inherit-working-directory = true
 split-inherit-working-directory = true
 unfocused-split-opacity = 1.0
+#background-opacity = 0.95
+font-family = GohuFont 11 Nerd Font
