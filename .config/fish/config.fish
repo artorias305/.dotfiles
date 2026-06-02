@@ -19,3 +19,4 @@ set -gx MANPAGER "nvim +Man!"
 zoxide init fish | source
 
 fish_add_path ~/.bun/bin
+fish_add_path ~/.opencode/bin
