@@ -17,3 +17,5 @@ abbr -a src "source ~/.config/fish/config.fish"
 set -gx MANPAGER "nvim +Man!"
 
 zoxide init fish | source
+
+fish_add_path ~/.bun/bin
