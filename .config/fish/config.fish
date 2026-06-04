@@ -8,6 +8,7 @@ alias cat="bat"
 alias grep="rg"
 alias ls="eza"
 alias find="fd"
+alias cd="z"
 
 abbr -a tree "eza --tree"
 abbr -a ps procs

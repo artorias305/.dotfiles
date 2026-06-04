@@ -32,3 +32,5 @@ let mapleader = ' '
 set updatetime=500
 
 filetype plugin indent on
+
+set belloff=all
