@@ -1,0 +1,39 @@
+{
+    "project_panel": {
+        "dock": "left"
+    },
+    "buffer_font_family": "JetBrainsMono NF",
+    "theme": "JetBrains Islands Dark",
+    "vim": {
+        "toggle_relative_line_numbers": true
+    },
+    "format_on_save": "on",
+    "formatter": "language_server",
+    "disable_ai": false,
+    "icon_theme": "JetBrains New UI Icons (Dark)",
+    "agent": {
+        "sidebar_side": "right",
+        "default_profile": "ask",
+        "commit_message_model": {
+            "provider": "opencode",
+            "model": "free/big-pickle"
+        },
+        "default_model": {
+            "provider": "opencode",
+            "model": "free/big-pickle",
+            "enable_thinking": false
+        },
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "vim_mode": false,
+    "lsp": {
+        "nim": {
+            "binary": {
+                "path": "/home/kiq/.nimble/bin/nimlsp",
+                "args": []
+            }
+        }
+    }
+}
+
