@@ -4,16 +4,16 @@ end
 
 set -g fish_greeting ""
 
-alias cat="bat"
-alias grep="rg"
 alias ls="eza"
-alias find="fd"
 alias cd="z"
 
 abbr -a tree "eza --tree"
 abbr -a ps procs
 abbr -a lg lazygit
 abbr -a src "source ~/.config/fish/config.fish"
+abbr -a cat "bat"
+abbr -a grep "rg"
+abbr -a find "fd"
 
 set -gx MANPAGER "nvim +Man!"
 
