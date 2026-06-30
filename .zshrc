@@ -1,8 +1,8 @@
-#export ZSH="$HOME/.oh-my-zsh"
-#ZSH_THEME="robbyrussell"
-#plugins=(git)
-#
-#source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 export EDITOR="nvim"
 
@@ -45,5 +45,3 @@ PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-
-eval "$(starship init zsh)"
