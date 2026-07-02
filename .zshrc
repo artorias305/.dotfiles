@@ -29,11 +29,13 @@ open_current_dir() {
 zle -N open_current_dir
 bindkey '^f' open_current_dir
 
-alias goinit="go mod init github.com/artorias305/$(basename $PWD)"
 alias clang++="clang++ -std=c++26"
 
-PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
+goinit() {
+    go mod init "github.com/artorias305/$(basename "$PWD")"
+}
 
+export PATH="$HOME/go/bin:$PATH"
 
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
