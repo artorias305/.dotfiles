@@ -1,5 +1,4 @@
-theme = tokyonight_night
-#theme = Vesper
+theme = oldworld
 macos-option-as-alt = left
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:down
@@ -8,8 +7,5 @@ keybind = super+l=goto_split:right
 window-inherit-working-directory = true
 tab-inherit-working-directory = true
 split-inherit-working-directory = true
-#unfocused-split-opacity = 1.0
-#background-opacity = 0.95
-#font-family = GeistMono Nerd Font
-#font-size = 15
-font-thicken = true
+unfocused-split-opacity = 1.0
+font-family = Iosevka Nerd Font
