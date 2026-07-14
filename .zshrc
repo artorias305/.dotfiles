@@ -72,3 +72,5 @@ alias wslview="explorer.exe"
 eval "$(zoxide init zsh)"
 
 export PATH="$HOME/c3:$PATH"
+
+export MANPAGER="nvim +Man!"

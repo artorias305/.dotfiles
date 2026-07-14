@@ -29,9 +29,10 @@ zmodule duration-info
 # Exposes git repository status information to prompts.
 zmodule git-info
 # A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-# zmodule asciiship
 zmodule prompt-pwd
+# zmodule romkatv/powerlevel10k --use degit
 zmodule Ansimorph/oblong --source oblong.zsh-theme
+# zmodule asciiship
 
 #
 # Completion
