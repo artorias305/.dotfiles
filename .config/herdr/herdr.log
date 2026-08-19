@@ -1,0 +1,13 @@
+2026-08-19T19:37:17.265822Z  INFO herdr starting, pid=28902
+2026-08-19T19:37:17.704545Z  INFO new version v0.8.2 available, downloading from https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-linux-x86_64
+2026-08-19T19:37:18.299260Z  INFO auto-update: v0.8.2 installed, restart to use
+2026-08-19T19:37:22.056434Z  INFO workspace created workspace=test root_pane=1
+2026-08-19T19:37:22.056997Z  INFO child spawned pane=1 pid=28920
+2026-08-19T19:37:42.911578Z  INFO child spawned pane=2 pid=29071
+2026-08-19T19:37:59.829220Z  INFO workspace created workspace=test1 root_pane=3
+2026-08-19T19:37:59.829522Z  INFO child spawned pane=3 pid=29222
+2026-08-19T19:38:26.767083Z  INFO agent changed pane=1 new_agent=Some(OpenCode) process=opencode
+2026-08-19T19:39:33.325032Z  INFO agent changed pane=1 new_agent=None process=zsh
+2026-08-19T19:40:27.282130Z  INFO child exited pane=1 status=ExitStatus { code: 1, signal: None }
+2026-08-19T19:40:28.065618Z  INFO child exited pane=3 status=ExitStatus { code: 0, signal: None }
+2026-08-19T19:40:31.220921Z  INFO herdr exiting

@@ -1,0 +1,347 @@
+2026-08-19T19:40:34.342594Z  INFO herdr::api::server: api server listening path=/home/kiq/.config/herdr/herdr.sock
+2026-08-19T19:40:34.343421Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-19T19:40:34.936079Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T19:40:34.939828Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=40 cols=120 scrollback_limit_bytes=10000000
+2026-08-19T19:40:34.940964Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=29727
+2026-08-19T19:40:34.941212Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-08-19T19:40:34.941223Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:40:34.941236Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:40:34.941241Z  INFO herdr::server::headless: created startup workspace cwd=/home/kiq
+2026-08-19T19:40:34.941350Z  INFO herdr::server::headless: client protocol socket listening path=/home/kiq/.config/herdr/herdr-client.sock
+2026-08-19T19:40:34.941375Z  INFO herdr::server::headless: herdr server started api_socket=/home/kiq/.config/herdr/herdr.sock client_socket=/home/kiq/.config/herdr/herdr-client.sock
+2026-08-19T19:40:34.941647Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=29711
+2026-08-19T19:40:34.943810Z  INFO herdr::server::headless: client connected client_id=2 cols=213 rows=52 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-19T19:40:39.943953Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=1
+2026-08-19T19:40:42.897843Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:40:43.207928Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:40:46.345887Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:40:48.510910Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:40:49.342872Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:40:49.344051Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=29939
+2026-08-19T19:40:49.344271Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-08-19T19:40:51.209583Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:40:52.072963Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-08-19T19:40:52.878301Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:40:52.883642Z  INFO herdr::pane: pane session terminated pane=2 pid=29939 signal=Hangup
+2026-08-19T19:40:52.883803Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-08-19T19:40:57.885406Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=1
+2026-08-19T19:41:11.806687Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:41:49.804565Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:42:05.319715Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:server:reload-config" method="server.reload_config" changes_ui=true
+2026-08-19T19:42:05.320751Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:server:reload-config" method="server.reload_config"
+2026-08-19T19:42:09.516901Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:42:09.518103Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=30249
+2026-08-19T19:42:09.518319Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-08-19T19:42:10.553228Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:42:10.553277Z  INFO herdr::pane: pane session terminated pane=3 pid=30249 signal=Hangup
+2026-08-19T19:42:10.553427Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-08-19T19:42:15.555078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=1
+2026-08-19T19:42:30.019424Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:42:44.552628Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:server:reload-config" method="server.reload_config" changes_ui=true
+2026-08-19T19:42:44.553685Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:server:reload-config" method="server.reload_config"
+2026-08-19T19:42:46.854197Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-19T19:42:46.856465Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-19T19:42:48.812795Z  INFO herdr::server::headless: client connected client_id=4 cols=213 rows=52 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-19T19:43:13.740521Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:43:17.516948Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:43:18.293345Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:43:23.867185Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:43:27.343363Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:43:27.344748Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=30555
+2026-08-19T19:43:27.345043Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=4
+2026-08-19T19:43:27.345068Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-08-19T19:43:27.345130Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-08-19T19:43:32.346691Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:43:33.527364Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:43:33.527481Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:43:38.529094Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:43:45.572331Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:43:49.079510Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:44:06.928455Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:44:13.436101Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:44:26.589986Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:44:58.602646Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:44:58.773116Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:45:17.906422Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:45:20.023203Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:45:20.024586Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=30804
+2026-08-19T19:45:20.024808Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:45:21.193594Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:45:21.193629Z  INFO herdr::pane: pane session terminated pane=5 pid=30804 signal=Hangup
+2026-08-19T19:45:21.193895Z  WARN herdr::app::actions: PaneDied for unknown pane pane=5
+2026-08-19T19:45:22.741212Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:45:22.742452Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=30953
+2026-08-19T19:45:22.742665Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:45:23.714270Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:45:23.733483Z  INFO herdr::pane: pane session terminated pane=6 pid=30953 signal=Hangup
+2026-08-19T19:45:23.733690Z  WARN herdr::app::actions: PaneDied for unknown pane pane=6
+2026-08-19T19:45:28.735056Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:45:29.182808Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:45:32.506584Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:45:33.712946Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:45:33.713170Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:45:42.377822Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:47:33.811422Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:47:34.034356Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:47:34.248621Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:47:44.487126Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:47:54.840520Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:47:54.840558Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:47:59.842140Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:48:04.913342Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:48:05.407050Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:48:06.060357Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:48:18.323623Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:48:18.325144Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=31238
+2026-08-19T19:48:18.325413Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-08-19T19:48:19.360626Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:48:19.380820Z  INFO herdr::pane: pane session terminated pane=7 pid=31238 signal=Hangup
+2026-08-19T19:48:19.381019Z  WARN herdr::app::actions: PaneDied for unknown pane pane=7
+2026-08-19T19:48:21.673191Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:48:21.673441Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:48:24.383373Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:48:25.880106Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:48:30.337080Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-08-19T19:48:30.337125Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-08-19T19:48:34.359049Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:48:34.359091Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:48:39.361047Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T19:48:40.320198Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:48:50.720155Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:48:53.467960Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:10.822053Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:21.844944Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:22.200953Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:49:22.201204Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:49:22.993075Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:49:22.994440Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=31435
+2026-08-19T19:49:22.994771Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3" pane_id=8
+2026-08-19T19:49:22.994782Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-08-19T19:49:22.994804Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-08-19T19:49:24.495034Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:49:24.496325Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=31583
+2026-08-19T19:49:24.496571Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w4" pane_id=9
+2026-08-19T19:49:24.496579Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-08-19T19:49:24.496615Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-08-19T19:49:29.498601Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:49:31.245150Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:33.982028Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:37.382660Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:49:37.382717Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:49:42.385869Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:49:54.470554Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:56.605765Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:56.927767Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:57.100102Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:49:58.819889Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:50:05.940895Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:50:09.466896Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:50:09.467145Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:50:17.760876Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:50:17.941751Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:50:20.669879Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:50:25.364742Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:50:25.366126Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=31779
+2026-08-19T19:50:25.366342Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-08-19T19:50:30.369415Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:50:30.769805Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:server:reload-config" method="server.reload_config" changes_ui=true
+2026-08-19T19:50:30.770051Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:50:30.770270Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:server:reload-config" method="server.reload_config"
+2026-08-19T19:50:56.077003Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:50:56.077279Z  WARN herdr::config::keybinds: config diagnostic prefix+$: kept keys.rename_tab, disabled keys.split_vertical
+2026-08-19T19:50:59.017185Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:50:59.017206Z  INFO herdr::pane: pane session terminated pane=10 pid=31779 signal=Hangup
+2026-08-19T19:50:59.017384Z  WARN herdr::app::actions: PaneDied for unknown pane pane=10
+2026-08-19T19:51:04.019653Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:51:05.619758Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:51:05.620910Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=31970
+2026-08-19T19:51:05.621099Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:51:07.034300Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=11 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T19:51:07.034309Z  INFO herdr::pane: pane session terminated pane=11 pid=31970 signal=Hangup
+2026-08-19T19:51:07.034490Z  WARN herdr::app::actions: PaneDied for unknown pane pane=11
+2026-08-19T19:51:08.612045Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:11.028744Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:11.191543Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:12.035902Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:51:13.854664Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:20.385597Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=12 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T19:51:20.386812Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=12 pid=32129
+2026-08-19T19:51:20.387007Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:51:24.950578Z  INFO herdr::pane: agent changed pane=12 previous_agent=None agent=Some(Pi) process=pi pgid=Some(32279)
+2026-08-19T19:51:25.388865Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:51:54.545584Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:54.741428Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:55.194613Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:57.324654Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:51:58.480257Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:52:03.482480Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:52:14.206626Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:52:17.797833Z  INFO herdr::app::actions: copied selection to clipboard
+2026-08-19T19:52:19.213283Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:52:19.395899Z  INFO herdr::app::actions: copied selection to clipboard
+2026-08-19T19:52:25.261317Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:52:26.749293Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:52:30.264647Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:52:48.424114Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:52:56.445407Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:53:15.060377Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:53:17.350415Z  INFO herdr::pane: agent changed pane=12 previous_agent=Some(Pi) agent=None pgid=Some(32129)
+2026-08-19T19:53:20.063738Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:53:24.700947Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:53:29.703239Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:53:31.971431Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:53:36.973771Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:54:26.718016Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:54:29.083266Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:54:31.720909Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=4
+2026-08-19T19:54:37.855774Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:54:39.737750Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-19T19:54:39.740594Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-19T19:54:41.769325Z  INFO herdr::server::headless: client connected client_id=6 cols=213 rows=52 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-19T19:54:47.064735Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:54:49.218004Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=13 rows=51 cols=94 scrollback_limit_bytes=10000000
+2026-08-19T19:54:49.219607Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=13 pid=32692
+2026-08-19T19:54:49.219848Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w5" pane_id=13
+2026-08-19T19:54:49.219858Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-08-19T19:54:49.219887Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-08-19T19:54:54.221889Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=5
+2026-08-19T19:54:59.426721Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T19:55:02.256592Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:55:02.256638Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:55:04.811606Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:55:07.191646Z  INFO herdr::pane: agent changed pane=12 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(32853)
+2026-08-19T19:55:09.813766Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=5
+2026-08-19T19:59:40.349720Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-08-19T19:59:40.349826Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-08-19T19:59:40.837369Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-08-19T19:59:40.837463Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-08-19T19:59:41.243534Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T19:59:41.243616Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T19:59:46.244613Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=5
+2026-08-19T20:00:36.905721Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:00:36.906057Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:00:47.818025Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:00:50.010556Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:00:51.068610Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=14 rows=51 cols=94 scrollback_limit_bytes=10000000
+2026-08-19T20:00:51.070214Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=14 pid=33561
+2026-08-19T20:00:51.070483Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w6" pane_id=14
+2026-08-19T20:00:51.070524Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-08-19T20:00:51.070563Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w6" tab_id="w6:t1"
+2026-08-19T20:00:55.645041Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T20:00:55.645216Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T20:01:00.647634Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=6
+2026-08-19T20:01:23.114392Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:23.114694Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:29.733295Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-08-19T20:01:29.733386Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-08-19T20:01:34.736011Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=6
+2026-08-19T20:01:45.319631Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:48.858512Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-19T20:01:48.908699Z  INFO herdr::server::headless: completing server shutdown
+2026-08-19T20:01:48.959644Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=6
+2026-08-19T20:01:48.959696Z  INFO herdr::server::headless: headless server exiting
+2026-08-19T20:01:48.960992Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:48.962069Z  INFO herdr::pane: pane session terminated pane=8 pid=31435 signal=Hangup
+2026-08-19T20:01:48.963230Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=13 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:48.983332Z  INFO herdr::pane: pane session terminated pane=13 pid=32692 signal=Hangup
+2026-08-19T20:01:48.984570Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:49.004444Z  INFO herdr::pane: pane session terminated pane=1 pid=29727 signal=Hangup
+2026-08-19T20:01:49.005617Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:49.025564Z  INFO herdr::pane: pane session terminated pane=4 pid=30555 signal=Hangup
+2026-08-19T20:01:49.027088Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:49.046890Z  INFO herdr::pane: pane session terminated pane=9 pid=31583 signal=Hangup
+2026-08-19T20:01:49.048308Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=12 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:49.168793Z  INFO herdr::pane: pane session terminated pane=12 pid=32129 signal=Hangup
+2026-08-19T20:01:49.169866Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=14 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:01:49.190022Z  INFO herdr::pane: pane session terminated pane=14 pid=33561 signal=Hangup
+2026-08-19T20:01:49.191332Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=29711
+2026-08-19T20:01:51.366580Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:51.366754Z  INFO herdr::api::server: api server listening path=/home/kiq/.config/herdr/herdr.sock
+2026-08-19T20:01:51.367562Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:51.368342Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.369147Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=33838
+2026-08-19T20:01:51.369377Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.370079Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=33841
+2026-08-19T20:01:51.370419Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.371195Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=33844
+2026-08-19T20:01:51.371500Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.372346Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=33848
+2026-08-19T20:01:51.372633Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.373468Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=33853
+2026-08-19T20:01:51.373772Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.374772Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=33858
+2026-08-19T20:01:51.374995Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.378260Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=33865
+2026-08-19T20:01:51.378738Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=6
+2026-08-19T20:01:51.378770Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-19T20:01:51.481245Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:52.113661Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T20:01:52.113996Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:52.114302Z  WARN herdr::config::keybinds: config diagnostic prefix+shift+x: kept keys.close_workspace, disabled keys.close_tab
+2026-08-19T20:01:52.117614Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/kiq
+2026-08-19T20:01:52.117730Z  INFO herdr::server::headless: client protocol socket listening path=/home/kiq/.config/herdr/herdr-client.sock
+2026-08-19T20:01:52.117766Z  INFO herdr::server::headless: herdr server started api_socket=/home/kiq/.config/herdr/herdr.sock client_socket=/home/kiq/.config/herdr/herdr-client.sock
+2026-08-19T20:01:52.118049Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=33828
+2026-08-19T20:01:52.121481Z  INFO herdr::server::headless: client connected client_id=2 cols=213 rows=52 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-19T20:02:09.076140Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="pi"
+2026-08-19T20:02:09.077510Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="opencode"
+2026-08-19T20:02:11.492254Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:02:14.621591Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=6
+2026-08-19T20:02:16.744036Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-08-19T20:02:16.744860Z  INFO herdr::pane: pane session terminated pane=4 pid=33848 signal=Hangup
+2026-08-19T20:02:16.744871Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:16.745093Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-08-19T20:02:20.202401Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-08-19T20:02:20.203659Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:20.223405Z  INFO herdr::pane: pane session terminated pane=5 pid=33853 signal=Hangup
+2026-08-19T20:02:20.223698Z  WARN herdr::app::actions: PaneDied for unknown pane pane=5
+2026-08-19T20:02:21.473077Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-08-19T20:02:21.473948Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:21.493980Z  INFO herdr::pane: pane session terminated pane=6 pid=33858 signal=Hangup
+2026-08-19T20:02:21.494285Z  WARN herdr::app::actions: PaneDied for unknown pane pane=6
+2026-08-19T20:02:22.881068Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=51 cols=187 scrollback_limit_bytes=10000000
+2026-08-19T20:02:22.882413Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=34898
+2026-08-19T20:02:22.882639Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w7" pane_id=8
+2026-08-19T20:02:22.882646Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-08-19T20:02:22.882665Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-08-19T20:02:24.190972Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-08-19T20:02:24.191764Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:24.191796Z  INFO herdr::pane: pane session terminated pane=8 pid=34898 signal=Hangup
+2026-08-19T20:02:24.191953Z  WARN herdr::app::actions: PaneDied for unknown pane pane=8
+2026-08-19T20:02:25.488061Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-08-19T20:02:25.489623Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:25.509137Z  INFO herdr::pane: pane session terminated pane=7 pid=33865 signal=Hangup
+2026-08-19T20:02:25.509468Z  WARN herdr::app::actions: PaneDied for unknown pane pane=7
+2026-08-19T20:02:27.131881Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-08-19T20:02:27.132968Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:02:27.152873Z  INFO herdr::pane: pane session terminated pane=3 pid=33844 signal=Hangup
+2026-08-19T20:02:27.153176Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-08-19T20:02:30.772390Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=51 cols=94 scrollback_limit_bytes=10000000
+2026-08-19T20:02:30.773852Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=35049
+2026-08-19T20:02:30.774059Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w8" pane_id=9
+2026-08-19T20:02:30.774066Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-08-19T20:02:30.774171Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-08-19T20:02:35.776692Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=2
+2026-08-19T20:03:10.836484Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:04:28.409059Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:04:45.443534Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:04:52.297811Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:04:52.996901Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:04:55.453489Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-19T20:05:10.435226Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T20:05:10.435270Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T20:05:11.795762Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T20:05:12.164641Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-08-19T20:05:16.125338Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-08-19T20:05:16.126767Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:05:16.126991Z  INFO herdr::pane: pane session terminated pane=1 pid=33838 signal=Hangup
+2026-08-19T20:05:16.128488Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-08-19T20:05:16.148317Z  INFO herdr::pane: pane session terminated pane=2 pid=33841 signal=Hangup
+2026-08-19T20:05:16.148582Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-08-19T20:05:16.148592Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-08-19T20:05:21.150866Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/kiq/.config/herdr/session.json workspaces=1
+2026-08-19T20:05:23.006784Z  INFO herdr::server::headless: client resize client_id=2 cols=120 rows=30 cell_width_px=0 cell_height_px=0
+2026-08-19T20:05:24.061440Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-19T20:05:24.062559Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-19T20:05:42.490565Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-19T20:05:42.491739Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: None }"
