@@ -95,7 +95,7 @@ focus_pane_right = "ctrl+l"
 # cycle_pane_previous = "prefix+shift+tab"
 # last_pane = ""          # optional, unset by default; bind e.g. "prefix+tab" for global back-and-forth
 split_vertical = "prefix+%"
-split_horizontal = "prefix+h"
+split_horizontal = "prefix+\""
 close_pane = "prefix+x"
 # zoom = "prefix+z"       # legacy alias: fullscreen
 # resize_mode = "prefix+r"
@@ -208,7 +208,7 @@ prompt_new_tab_name = false
 # prompt_new_workspace_name = false
 
 # Draw borders around split panes.
-# pane_borders = true
+pane_borders = true
 
 # Draw borders along the outside edge of the pane area.
 # Disable for tmux-style internal splitters without an outside frame.
