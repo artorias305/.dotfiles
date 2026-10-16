@@ -1,0 +1,22 @@
+require('vis')
+
+vis.events.subscribe(vis.events.INIT, function()
+	vis:command("set theme caelus")
+end)
+
+vis.events.subscribe(vis.events.WIN_OPEN, function(win)
+	vis:command("set tabwidth 4")
+	vis:command("set numbers true")
+	vis:command("set autoindent true")
+	vis:command("set relativenumbers true")
+	vis:command("set expandtab off")
+	vis:map(vis.modes.NORMAL, " sf", function()
+		vis:command("open .")
+		vis:feedkeys("<C-w>k")
+		vis:command("wq!")
+	end, "")
+end)
+
+local autoclose = require('plugins/vis-autoclose')
+local fzf = require('plugins/vis-fzf-open')
+local lsp = require('plugins/vis-lspc')
